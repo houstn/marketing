@@ -47,7 +47,7 @@ export default function Hero() {
             ))}
           </div>
           <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-            <Link href="https://dash.houstn.io" className="text-sm font-semibold leading-6 text-gray-900">
+            <Link href={process.env.NEXT_PUBLIC_DASHBOARD_URL} className="text-sm font-semibold leading-6 text-gray-900">
               Log in <span aria-hidden="true">&rarr;</span>
             </Link>
           </div>
@@ -88,7 +88,7 @@ export default function Hero() {
                 </div>
                 <div className="py-6">
                   <Link
-                    href="https://dash.houstn.io"
+                    href={process.env.NEXT_PUBLIC_DASHBOARD_URL}
                     className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                   >
                     Log in
@@ -132,12 +132,12 @@ export default function Hero() {
               officiis explicabo inventore.
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
-              <a
-                href="#"
+              <Link
+                href={process.env.NEXT_PUBLIC_DASHBOARD_URL}
                 className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
               >
                 Try for free
-              </a>
+              </Link>
               <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
                 Read our documentation <span aria-hidden="true">→</span>
               </a>
